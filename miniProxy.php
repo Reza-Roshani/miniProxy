@@ -1,15 +1,4 @@
 <?php
-/*
-NOTE: miniProxy IS NO LONGER MAINTAINED AS OF APRIL 26th, 2020.
-IF YOU USE IT, YOU DO SO ENTIRELY AT YOUR OWN RISK.
-More information is available at <https://github.com/joshdick/miniProxy>.
-*/
-
-/*
-miniProxy - A simple PHP web proxy. <https://github.com/joshdick/miniProxy>
-Written and maintained by Joshua Dick <http://joshdick.net>.
-miniProxy is licensed under the GNU GPL v3 <https://www.gnu.org/licenses/gpl-3.0.html>.
-*/
 
 /****************************** START CONFIGURATION ******************************/
 
@@ -348,7 +337,7 @@ if (isset($_POST["miniProxyFormAction"])) {
 }
 if (empty($url)) {
     if (empty($startURL)) {
-      die("<html><head><title>miniProxy</title></head><body><h1>Welcome to miniProxy!</h1>miniProxy can be directly invoked like this: <a href=\"" . PROXY_PREFIX . $landingExampleURL . "\">" . PROXY_PREFIX . $landingExampleURL . "</a><br /><br />Or, you can simply enter a URL below:<br /><br /><form onsubmit=\"if (document.getElementById('site').value) { window.location.href='" . PROXY_PREFIX . "' + document.getElementById('site').value; return false; } else { window.location.href='" . PROXY_PREFIX . $landingExampleURL . "'; return false; }\" autocomplete=\"off\"><input id=\"site\" type=\"text\" size=\"50\" /><input type=\"submit\" value=\"Proxy It!\" /></form></body></html>");
+      die("<html><head><title>سرویس تغییر آی پی</title></head><body><h1>سرویس تغییر آی پی</h1>میتوانید مستقیما آدرس سایت مورد نظر را با پیشوند این سایت وارد کنید به این صورت: <a href=\"" . PROXY_PREFIX . $landingExampleURL . "\">" . PROXY_PREFIX . $landingExampleURL . "</a><br /><br />یا آدرس مورد نظر خود را در اینجا وارد کنید:<br /><br /><form onsubmit=\"if (document.getElementById('site').value) { window.location.href='" . PROXY_PREFIX . "' + document.getElementById('site').value; return false; } else { window.location.href='" . PROXY_PREFIX . $landingExampleURL . "'; return false; }\" autocomplete=\"off\"><input id=\"site\" type=\"text\" size=\"50\" /><input type=\"submit\" value=\"باز کردن\" /></form<</body></html>");
     } else {
       $url = $startURL;
     }
