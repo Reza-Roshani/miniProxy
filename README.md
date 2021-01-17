@@ -1,9 +1,6 @@
 # miniProxy فارسی
 
 
-
-# miniProxy
-
 *by Joshua Dick*
 
 *[http://joshdick.github.io/miniProxy](http://joshdick.github.io/miniProxy)*
